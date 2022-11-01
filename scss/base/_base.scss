@@ -1,0 +1,44 @@
+@use "../abstracts/abstracts" as variable;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: variable.$font-family;
+  font-size: variable.$font-size-primary;
+  font-weight: variable.$font-weight-400;
+  background-color: variable.$dark-cyan;
+  color: variable.$dark-gray;
+  min-height: 100vh;
+
+  background-image: url(../../images/bg-pattern-top.svg),
+    url(../../images/bg-pattern-bottom.svg);
+  // background-position: top -1000px left -700px,
+  //  bottom -1225px right -500px;
+
+  background-position: top calc(100vw - 165vw) left calc(100vw - 146vw),
+    bottom calc(100vw - 180vw) right calc(100vw - 133vw);
+
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat;
+
+  @include variable.flex(column);
+}
+
+@media (max-width: 748px) {
+  body {
+    background-size: contain;
+    background-position: top calc(100vw - 150vw) left calc(100vw - 150vw),
+      bottom calc(100vw - 150vw) right calc(100vw - 150vw);
+  }
+}

@@ -1,0 +1,26 @@
+$mobile-size: 375px;
+$desktop-size: 1440px;
+
+$dark-cyan: hsl(185, 75%, 39%);
+$very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+
+//Body
+$font-size-primary: 18px;
+//Name and Stats
+$font-size-secondary: 18px;
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+$font-family: "Kumbh Sans", sans-serif;
+$font-weight-400: 400;
+$font-weight-700: 700;
+
+//Mixin
+@mixin flex($direction: row, $justify-content: center) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify-content;
+  flex-direction: $direction;
+}

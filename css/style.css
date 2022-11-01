@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: hsl(185deg, 75%, 39%);
+  color: hsl(0deg, 0%, 59%);
+  min-height: 100vh;
+  background-image: url(../../images/bg-pattern-top.svg), url(../../images/bg-pattern-bottom.svg);
+  background-position: top -65vw left -46vw, bottom -80vw right -33vw;
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 748px) {
+  body {
+    background-size: contain;
+    background-position: top -50vw left -50vw, bottom -50vw right -50vw;
+  }
+}
+.card {
+  background-color: white;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  width: 350px;
+  height: 378px;
+  display: flex;
+  align-items: center;
+  justify-content: normal;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.card__header {
+  width: 100%;
+  position: relative;
+  min-height: 8.75rem;
+  border-radius: 1rem 1rem 0 0;
+  background: url(../../images/bg-pattern-card.svg);
+}
+.card__header img {
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  border-radius: 50%;
+  padding: 0.3rem;
+  background-color: white;
+}
+.card__body {
+  line-height: 2rem;
+  width: 100%;
+  margin-top: 3rem;
+}
+.card hr {
+  background-color: #eee;
+  border: 0 none;
+  color: #eee;
+  height: 1.5px;
+  width: 100%;
+}
+.card__footer {
+  width: 100%;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.card__body h3:not(span:first-of-type),
+.card__stats li p:first-child {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(229deg, 23%, 23%);
+}
+
+.card__body h3 span {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(0deg, 0%, 59%);
+}
+
+.card__stats {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.card__stats li p:last-child {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+}
+
+/*# sourceMappingURL=style.css.map */
