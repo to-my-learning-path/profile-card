@@ -19,7 +19,8 @@ body {
   background-color: hsl(185deg, 75%, 39%);
   color: hsl(0deg, 0%, 59%);
   min-height: 100vh;
-  background-image: url(../../images/bg-pattern-top.svg), url(../../images/bg-pattern-bottom.svg);
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
   background-position: top -65vw left -46vw, bottom -80vw right -33vw;
   background-size: cover;
   background-repeat: no-repeat, no-repeat;
@@ -39,7 +40,8 @@ body {
   background-color: white;
   text-align: center;
   border-radius: 1rem;
-  box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1),
+    0 3px 6px 0 rgba(0, 0, 0, 0.07);
   width: 350px;
   height: 378px;
   display: flex;
@@ -53,7 +55,7 @@ body {
   position: relative;
   min-height: 8.75rem;
   border-radius: 1rem 1rem 0 0;
-  background: url(../../images/bg-pattern-card.svg);
+  background: url(../images/bg-pattern-card.svg);
 }
 .card__header img {
   position: absolute;
